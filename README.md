@@ -18,3 +18,4 @@ this quiz is for the person that loves to watch movies and can identify the movi
 ## Deployment
 
 ### Media
+![Photo](https://www.pexels.com/sv-se/)
