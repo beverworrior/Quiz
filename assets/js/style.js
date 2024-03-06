@@ -1,26 +1,26 @@
 
-const questionContainer = document.getElementById("question-container")
-const questionElement = document.getElementById("question")
-const answerButton = document.getElementById("answer-button")
-const nextButton = document.getElementById("next-btn")
-const resultDiv = document.getElementById("result")
+const questionContainer = document.getElementById("question-container");
+const questionElement = document.getElementById("question");
+const answerButton = document.getElementById("answer-button");
+const nextButton = document.getElementById("next-btn");
+const resultDiv = document.getElementById("result");
 const restartButton = document.getElementById("restart-btn");
 
 let shuffleQuestion, currentQuestion, score;
 // questions
 const question = [
     {
-        question: "vrefdv",
-        answer: [
-            { text: "ebrdfab", correct: true },
-            { text: "badf<", correct: false },
-            { text: "baerf", correct: false },
-            { text: "aerb", correct: false },
+        question: "This character said this iconic line I, be back who said that?",
+        answers: [
+            { text: "Arnold Schwarzenegger", correct: true },
+            { text: "Sylvester Stallone", correct: false },
+            { text: "Bruce Willis", correct: false },
+            { text: "Jason Statham", correct: false },
         ],
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: false },
             { text: "", correct: false },
             { text: "", correct: false },
@@ -29,7 +29,7 @@ const question = [
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: false },
             { text: "", correct: true },
             { text: "", correct: false },
@@ -38,7 +38,7 @@ const question = [
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: true },
             { text: "", correct: false },
             { text: "", correct: false },
@@ -47,7 +47,7 @@ const question = [
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: false },
             { text: "", correct: false },
             { text: "", correct: false },
@@ -56,7 +56,7 @@ const question = [
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: false },
             { text: "", correct: false },
             { text: "", correct: true },
@@ -65,7 +65,7 @@ const question = [
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: false },
             { text: "", correct: true },
             { text: "", correct: false },
@@ -74,7 +74,7 @@ const question = [
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: false },
             { text: "", correct: false },
             { text: "", correct: true },
@@ -83,7 +83,7 @@ const question = [
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: true },
             { text: "", correct: false },
             { text: "", correct: false },
@@ -92,7 +92,7 @@ const question = [
     },
     {
         question: "",
-        answer: [
+        answers: [
             { text: "", correct: false },
             { text: "", correct: false },
             { text: "", correct: false },
@@ -105,7 +105,7 @@ startQuiz();
 
 function startQuiz() {
     score = 0;
-    
+    questionContainer.style.display = "flex";
     shuffleQuestion = question.sort(() => Math.random() - 0.5);
     currentQuestion = 0;
     nextButton.classList.remove("hide");
@@ -167,7 +167,7 @@ restartButton.addEventListener("click", startQuiz);
 
 function endQuiz() {
     questionContainer.style.display = "none";
-    nestButton.classList.add("hide");
+    nextButton.classList.add("hide");
     restartButton.classList.remove("hide");
     resultDiv.classList.remove("hide");
     resultDiv.innerText = `Your final score: ${score} / ${shuffleQuestion.length}`;
