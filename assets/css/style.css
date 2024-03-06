@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 
-.quiz-container {
+.container {
     display: flex;
     flex-direction: column;
     width: 30rem;
@@ -56,9 +56,10 @@ input {
     border: none;
     border-radius:0 0 1.5em 0.5rem;
 }
-input,
-.btn {
-    background-color: red;
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 }
 
 .hide {
@@ -74,3 +75,30 @@ input,
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    body {
+      font-size: 50px;
+      padding: 50px;
+      border: 8px solid black;
+      background: yellow;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 50px;
+      padding: 50px;
+      border: 8px solid black;
+      background: yellow;
+    }
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 1024px) {
+    body {
+      font-size: 50px;
+      padding: 50px;
+      border: 8px solid black;
+      background: yellow;
+    }
+  }

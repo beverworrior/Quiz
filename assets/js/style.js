@@ -1,4 +1,4 @@
-
+// jshint esversion: 6
 const questionContainer = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-button");
@@ -121,7 +121,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
-    question.answer.forEach((answer, index) => {
+    question.answers.forEach((answer, index)=> {
         const inputGroup = document.createElement("div");
         inputGroup.classList.add("input-group");
 
@@ -152,8 +152,8 @@ nextButton.addEventListener("click", () => {
             correct) {
                 score++;
             }
-            currentQuestionIndex++;
-            if (shuffleQuestion.length > currentQuestionIndex) {
+            currentQuestion++;
+            if (shuffleQuestion.length > currentQuestion) {
                 setNextQuestion();
             } else {
                 endQuiz();
