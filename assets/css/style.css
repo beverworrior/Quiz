@@ -1,109 +1,109 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: aqua;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  flex-direction: column;
 }
 /* Area of where the quiz is */
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    max-width: 80%;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 0.6rem rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.6rem rgba(0,0,0,0.1);
 }
 
 #question-container {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    box-shadow: 1px 0px 20px 15px;
-    background-color: lightslategrey;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 1px 0px 20px 15px;
+  background-color: lightslategrey;
 }
 
 #question {
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .input-group {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 input {
-    width: fit-content;
+  width: fit-content;
 }
 /* Buttons */
 .btn {
-    padding: 1em;
-    background-color: blue;
-    color: wheat;
-    border: 1px solid black;
-    border-radius:0 1.5em 0.5rem;
-    font-weight: bolder;
-    box-shadow: 1rem 1px 22px 1px;
+  padding: 1em;
+  background-color: blue;
+  color: wheat;
+  border: 1px solid black;
+  border-radius:0 1.5em 0.5rem;
+  font-weight: bolder;
+  box-shadow: 1rem 1px 22px 1px;
 }
 
 .btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
 }
 
 .btn:hover {
-    border-color: red;
+  border-color: red;
 }
 
 .start-btn, .next-btn {
-    font-size: 2rem;
-    font-weight: lighter;
-    padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 10px 20px;
 }
 
 .controls {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: lightslategrey;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: lightslategrey;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 /* Media screen for different device*/
 @media screen and (max-width: 425px) and (min-width: 320px) {
-    body {
-      font-size: 50px;
-      padding: 50px;
-      border: 8px solid black;
-      background: yellow;
-    }
+  body {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    body {
-      font-size: 50px;
-      padding: 50px;
-      border: 8px solid black;
-      background: yellow;
-    }
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
   }
+}
 
-  @media screen and (max-width: 1440px) and (min-width: 1024px) {
-    body {
-      font-size: 50px;
-      padding: 50px;
-      border: 8px solid black;
-      background: yellow;
-    }
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  body {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
   }
+}
