@@ -12,7 +12,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 800px;
     max-width: 80%;
     background-color: white;
     border-radius: 0.5rem;
@@ -24,6 +24,7 @@ body {
     gap: 2rem;
     padding: 2rem;
     box-shadow: 1px 0px 20px 15px;
+    background-color: lightslategrey;
 }
 
 #question {
@@ -60,7 +61,7 @@ input {
 }
 
 .btn:hover {
-    border-color: black;
+    border-color: red;
 }
 
 .start-btn, .next-btn {
@@ -73,6 +74,7 @@ input {
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: lightslategrey;
 }
 
 .hide {
