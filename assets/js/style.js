@@ -45,7 +45,6 @@ function displayQuiz() {
                           <li><input type="radio" name="question${index}" value="a">${question.answers.a}</li>
                           <li><input type="radio" name="question${index}" value="b">${question.answers.b}</li>
                           <li><input type="radio" name="question${index}" value="c">${question.answers.c}</li>
-                          <li><input type="radio" name="question${index}" value="c">${question.answers.d}</li>
                       </ul>
                   </div>`;
   });
@@ -54,18 +53,18 @@ function displayQuiz() {
 }
 
 // Function to check answers and calculate score
-
-function checkAnswer() {
+function checkAnswers() {
   let score = 0;
 
-  question.forEach((question, index) => {
-    const selectedAnswer = document.querySelector(`input[name="question${index}"]:checked`);
-    if (selectedAnswer) {
-      if (selectedAnswer.value === question.correctAnswer) {
-        score++;
+  questions.forEach((question, index) => {
+      const selectedAnswer = document.querySelector(`input[name="question${index}"]:checked`);
+      if (selectedAnswer) {
+          if (selectedAnswer.value === question.correctAnswer) {
+              score++;
+          }
       }
-    }
   });
+
   alert(`Your score is: ${score}/${questions.length}`);
 }
 
