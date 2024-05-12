@@ -69,3 +69,8 @@ function checkAnswer() {
   alert(`Your score is: ${score}/${questions.length}`);
 }
 
+// Display the quiz when the page loads
+displayQuiz();
+
+// Event listener for the submit button
+document.getElementById('submit').addEventListener('click', checkAnswers);
