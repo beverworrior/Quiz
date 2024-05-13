@@ -1,3 +1,5 @@
+// jshint esversion: 6
+
 const questions = [
     {
         question: "What is the capital of France?",
@@ -34,12 +36,12 @@ function displayQuiz() {
     let quizHtml = '';
 
     questions.forEach((question, index) => {
-        quizHtml += `<div>
-                        <p>${index + 1}. ${question.question}</p>
+        quizHtml += `<div class="quiz-question">
+                        <label>${index + 1}. ${question.question}</label>
                         <ul>
-                            <li><input type="radio" name="question${index}" value="a">${question.answers.a}</li>
-                            <li><input type="radio" name="question${index}" value="b">${question.answers.b}</li>
-                            <li><input type="radio" name="question${index}" value="c">${question.answers.c}</li>
+                            <li><input type="radio" id="q${index}a" name="question${index}" value="a"><label for="q${index}a">${question.answers.a}</label></li>
+                            <li><input type="radio" id="q${index}b" name="question${index}" value="b"><label for="q${index}b">${question.answers.b}</label></li>
+                            <li><input type="radio" id="q${index}c" name="question${index}" value="c"><label for="q${index}c">${question.answers.c}</label></li>
                         </ul>
                     </div>`;
     });
