@@ -1,0 +1,36 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center;
+}
+
+#quiz {
+    margin: 20px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Submit Button Styles */
+#submit {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}

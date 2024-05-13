@@ -1,36 +1,25 @@
-# Movie Quiz
-this quiz is for the person that loves to watch movies and can identify the movies quotes.
-The purpose of this quiz is to see if you can get all correct answers and have fun.
+# JavaScript Quiz
 
-## progress
-1. ![step1](firstprogress1.png)
-2. ![step2](cssprogress.png)
-3. ![step3](Secoundcss.png)
-4. ![Final](Finalcssimages.png)
+This project is a simple quiz implemented in JavaScript. It presents the user with multiple-choice questions and allows them to submit their answers to get a score.
 
-## Validator Testing
-1. ![HTML](htmlvalidate.png)
-2. ![CSS](cssvalidate.png)
-3. ![JSHint](There was no problem)
-4. ![Lighthouse](lighthouse.png)
+## Files
 
-## Improvement
-if i had more time this is what i would like to implemented to my quiz.
-1. I can add a scoring system to count how many correct and incorrect answers was made.
-2. I can but a timer so that the player have a shorter time to search up the correct information.
-3. I can add so that when i answer the questions wrong its ends.
+- `index.html`: This file contains the HTML structure of the quiz. It includes the quiz questions, options, and a submit button.
+- `styles.css`: This file contains the CSS styles used to format the quiz layout and appearance.
+- `script.js`: This file contains the JavaScript code that defines the quiz questions, handles user interaction, calculates the score, and displays the result.
 
-## credits
-i got need to give credit to this youtube that i could build this quiz.
-1. ![youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=862s)
-took his idé for getting stated with my javascript especially with the const. 
-2. ![youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1134s)
-took his idé for getting improve with my javascript function. 
-thanks to them i could get a ide to build me quiz.
+## How to Use
 
-### bugs 
-i could not get my quiz started because my function could not read my id that i forgot to type in but after i put in the correct id name then my quiz could start.
+To use the quiz:
 
-## deployment
-i have deployed to my GitHub page 
-you can find my Live link hear ![Live](https://beverworrior.github.io/Quiz/)
+1. Open `index.html` in a web browser.
+2. Read each question carefully and select the answer you think is correct.
+3. Once you've answered all the questions, click the "Submit Answers" button.
+4. An alert will pop up displaying your score out of the total number of questions.
+
+## Customization
+
+You can customize the quiz by modifying the following in the `script.js` file:
+
+- `questions`: Add or edit the quiz questions, options, and correct answers.
+- CSS styles in `styles.css`: Modify the styles to change the appearance of the quiz.
