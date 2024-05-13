@@ -1,7 +1,7 @@
 # JavaScript Quiz
 
 This project is a simple quiz implemented in JavaScript. It presents the user with multiple-choice questions and allows them to submit their answers to get a score.
-[https://beverworrior.github.io/Quiz/]
+A link to live site [https://beverworrior.github.io/Quiz/]
 
 ## Files
 
@@ -29,4 +29,4 @@ You can customize the quiz by modifying the following in the `script.js` file:
 
 1. HTML [https://validator.w3.org/](assets/images/Screenshot%202024-05-13%2008.32.40.png)
 2. CSS [https://jigsaw.w3.org/css-validator/](assets/images/Screenshot%202024-05-13%2009.48.51.png)
-3. lighthouse [](assets/images/Screenshot%202024-05-13%2009.47.47.png)
+3. lighthouse [https://beverworrior.github.io/Quiz/](assets/images/Screenshot%202024-05-13%2009.47.47.png)
