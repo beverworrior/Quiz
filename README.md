@@ -1,32 +1,29 @@
 # JavaScript Quiz
 
-This project is a simple quiz implemented in JavaScript. It presents the user with multiple-choice questions and allows them to submit their answers to get a score.
-A link to live site [https://beverworrior.github.io/Quiz/]
+This project is a simple and interactive quiz application implemented in JavaScript. It provides users with multiple-choice questions, allowing them to test their knowledge by submitting answers and receiving a score.
 
-## Files
+## Purpose
 
-- `index.html`: This file contains the HTML structure of the quiz. It includes the quiz questions, options, and a submit button.
-- `styles.css`: This file contains the CSS styles used to format the quiz layout and appearance.
-- `script.js`: This file contains the JavaScript code that defines the quiz questions, handles user interaction, calculates the score, and displays the result.
+The JavaScript Quiz is designed to offer an engaging and educational experience for users interested in testing their knowledge on various topics. It can be customized for different subjects, making it a versatile tool for learning and assessment.
 
-## How to Use
+## Value
 
-To use the quiz:
+- **Educational Tool**: Helps users learn and test their knowledge on various topics.
+- **Interactive Experience**: Engages users with an interactive interface and immediate feedback.
+- **Customizable**: Allows users to modify questions and styles to fit different themes or subjects.
 
-1. Open `index.html` in a web browser.
-2. Read each question carefully and select the answer you think is correct.
-3. Once you've answered all the questions, click the "Submit Answers" button.
-4. An alert will pop up displaying your score out of the total number of questions.
+## Live Demo
 
-## Customization
+Experience the quiz live: [JavaScript Quiz Live Demo](https://beverworrior.github.io/Quiz/)
 
-You can customize the quiz by modifying the following in the `script.js` file:
+## Validation
 
-- `questions`: Add or edit the quiz questions, options, and correct answers.
-- CSS styles in `styles.css`: Modify the styles to change the appearance of the quiz.
+1. **HTML Validation**: [W3C Validator](https://validator.w3.org/)
+   ![HTML Validation Screenshot](assets/images/Screenshot%202024-05-13%2008.32.40.png)
+   
+2. **CSS Validation**: [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+   ![CSS Validation Screenshot](assets/images/Screenshot%202024-05-13%2009.48.51.png)
+   
+3. **Lighthouse Performance**: [Lighthouse Report](https://beverworrior.github.io/Quiz/)
+   ![Lighthouse Screenshot](assets/images/Screenshot%202024-05-13%2009.47.47.png)
 
-## Validtion
-
-1. HTML [https://validator.w3.org/](assets/images/Screenshot%202024-05-13%2008.32.40.png)
-2. CSS [https://jigsaw.w3.org/css-validator/](assets/images/Screenshot%202024-05-13%2009.48.51.png)
-3. lighthouse [https://beverworrior.github.io/Quiz/](assets/images/Screenshot%202024-05-13%2009.47.47.png)
